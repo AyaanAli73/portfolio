@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio of Architect Name, showcasing innovative and sustainable architectural designs.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <button class="login-btn">Login</button>
+    </div>
+</header>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" name="loginEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="#" onclick="openModal('registerModal')">Register</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" name="registerEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" name="registerPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="register-link">
+        <p>Already have an account? <a href="#" onclick="openModal('loginModal')">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover the works and designs of websites.</p>
+            <a href="#projects" class="cta-button">View Projects</a>
+        </div>
+    </section>
+    
+    <section id="about" class="content-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio!</p>
+                <P>My Name is Ayaan ali I'm student of B.tech cse from Maulana azad university jodhpur </P>
+                <P>I'm a web developer passionate about creating beautiful and functional websites.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/man1.png" alt="Architect Name">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img src="img/python.png" alt="Python Logo" class="skill-icon">
+            <h3>Advanced Python</h3>
+            <p>I am proficient in Python, having extensive experience with advanced concepts such as object-oriented programming, data structures, algorithms, and design patterns.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/fullstack.png" alt="Full-Stack Logo" class="skill-icon">
+            <h3>Full-Stack Development</h3>
+            <p>As a full-stack developer, I am skilled in both front-end and back-end development. I have a deep understanding of technologies such as HTML, CSS, JavaScript, and modern frameworks like React.js and Angular.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/reactjs.png" alt="React Logo" class="skill-icon">
+            <h3>React.js</h3>
+            <p>I have expertise in React.js, a powerful JavaScript library for building user interfaces. I leverage React's component-based architecture and virtual DOM for creating modular and efficient UI components.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/angular.png" alt="Angular Logo" class="skill-icon">
+            <h3>Angular</h3>
+            <p>I am proficient in Angular, a comprehensive web application framework maintained by Google. I utilize Angular's powerful features such as two-way data binding, dependency injection, and routing to build scalable and maintainable front-end applications.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/java.png" alt="Java Logo" class="skill-icon">
+            <h3>Java</h3>
+            <p>I have strong proficiency in Java, a versatile programming language used for developing enterprise-level applications, mobile apps, and web services.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-icon">
+            <h3>Bootstrap</h3>
+            <p>I am skilled in Bootstrap, a popular front-end framework for building responsive and mobile-first websites. I utilize Bootstrap's grid system, components, and utilities to create visually appealing and consistent layouts across different devices and screen sizes.</p>
+          </div>
+          <div class="skill-item">
+            <img src="img/sql.png" alt="MySQL Logo" class="skill-icon">
+            <h3>SQL and MySQL</h3>
+            <p>I am proficient in SQL (Structured Query Language) and MySQL, a powerful relational database management system. I have expertise in designing and optimizing SQL databases, writing complex queries, and performing database administration tasks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <div class="project-content">
+              <img src="img/demo1.webp" alt="Project 1" class="project-icon">
+              <h3>Project One</h3>
+              <p>A brief description of the first project. Highlight key features, technologies used, and what was accomplished.</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-content">
+              <img src="img/demo2.webp" alt="Project 2" class="project-icon">
+              <h3>Project Two</h3>
+              <p>A brief description of the second project. Highlight key features, technologies used, and what was accomplished.</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-content">
+              <img src="img/demo3.webp" alt="Project 3" class="project-icon">
+              <h3>Project Three</h3>
+              <p>A brief description of the third project. Highlight key features, technologies used, and what was accomplished.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions, feel free to reach out to me. I'm available via email and social media.</p>
+            <ul>
+              <li><i class="fas fa-envelope"></i> email@example.com</li>
+              <li><i class="fas fa-phone"></i> +123 456 7890</li>
+              <li><i class="fas fa-map-marker-alt"></i> City, Country</li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form action="submit_form.php" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer content -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagarm.com/ayaan_ali_73"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>&copy; 2024 MO. Ayaan Ali . All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+  <script src="script.js"></script>
+</body>
+</html>
